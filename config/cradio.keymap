@@ -83,6 +83,16 @@
             key-positions = <30 33>;
             layers = <0 1 2 3 4>;
         };
+
+        win_desk_left {
+            bindings = <&win_desk_left>;
+            key-positions = <20 21>;
+        };
+
+        win_desk_right {
+            bindings = <&win_desk_right>;
+            key-positions = <28 29>;
+        };
     };
 
     macros {
@@ -93,7 +103,7 @@
             label = "WIN_DESK_LEFT";
         };
 
-        win_desl_right: win_desl_right {
+        win_desk_right: win_desl_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(LC(RIGHT))>;
