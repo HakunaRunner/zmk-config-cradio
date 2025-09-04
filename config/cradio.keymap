@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
@@ -169,9 +170,9 @@
 
         set {
             bindings = <
-&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4       &sys_reset  &bootloader  &none            &none  &bt BT_CLR
-&win_desk_left  &none         &kp C_BRIGHTNESS_INC  &none         &kp PRINTSCREEN    &kp CAPS    &none        &kp C_VOLUME_UP  &none  &win_desk_right
-&mac_desk_left  &none         &kp C_BRI_DN          &none         &none              &none       &none        &kp C_VOL_DN     &none  &mac_desk_right
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4       &sys_reset  &bootloader  &out OUT_USB     &out OUT_BLE  &bt BT_CLR
+&win_desk_left  &none         &kp C_BRIGHTNESS_INC  &none         &kp PRINTSCREEN    &kp CAPS    &none        &kp C_VOLUME_UP  &none         &win_desk_right
+&mac_desk_left  &none         &kp C_BRI_DN          &none         &none              &none       &none        &kp C_VOL_DN     &none         &mac_desk_right
                                                     &trans        &trans             &trans      &trans
             >;
         };
