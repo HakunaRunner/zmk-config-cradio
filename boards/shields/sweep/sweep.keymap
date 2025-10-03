@@ -30,9 +30,9 @@
         };
 
         mmv {
-            acceleration-exponent = <3>;
-            time-to-max-speed-ms = <600>;
-            delay-ms = <0>;
+            acceleration-exponent = <4>;
+            time-to-max-speed-ms = <900>;
+            delay-ms = <50>;
         };
 
         msc {
