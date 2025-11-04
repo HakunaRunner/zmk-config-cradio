@@ -68,7 +68,7 @@
         };
 
         set_layer {
-            bindings = <&tog SET>;
+            bindings = <&mo SET>;
             key-positions = <20 29>;
             layers = <DEF>;
         };
