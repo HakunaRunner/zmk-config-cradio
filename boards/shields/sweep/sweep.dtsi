@@ -3,7 +3,7 @@
 
 &sweep_layout {
     transform = <&default_transform>;
-}
+};
 
 / {
     chosen {
